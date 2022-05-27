@@ -1,0 +1,1 @@
+If(COUNTCONDITION([Detail_Documenten van order_Order].[Document].[Omschrijving], Left([Detail_Documenten van order_Order].[Document].[Omschrijving], 8)==ConvertIntToString([Ordernummer])+"-obv")>0, "YES", "NO")
