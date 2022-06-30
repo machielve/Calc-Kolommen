@@ -33,6 +33,7 @@ If(    ([Termijncode].[Code]=="005" AND [@Total net amount]>=ConvertStringToInt(
     OR ([Termijncode].[Code]=="009" AND [@Total net amount]<=ConvertStringToInt("10000")    AND [Relatie].[code]=="9050")
     OR ([Termijncode].[Code]=="009" AND [@Total net amount]<=ConvertStringToInt("10000")    AND [Relatie].[code]=="9072")
     OR ([Termijncode].[Code]=="009" AND [@Total net amount]<=ConvertStringToInt("10000")    AND [Relatie].[code]=="2004")
+    OR ([Termijncode].[Code]=="009" AND [@Total net amount]<=ConvertStringToInt("10000")    AND [Relatie].[code]=="9060")
     OR ([Termijncode].[Code]=="009" AND [@Total net amount]<=ConvertStringToInt("10000")    AND [Relatie].[code]=="9069")
     OR ([Termijncode].[Code]=="009" AND [@Total net amount]<=ConvertStringToInt("50000")    AND [Relatie].[Code]=="18003"  AND (LEFT([Bestemmingsadres].[Naam],3)<>"AWL")) 
     OR ([Termijncode].[Code]=="009" AND [@Total net amount]<=ConvertStringToInt("50000")    AND [Relatie].[Code]=="18003"  AND (Right([Bestemmingsadres].[Naam],3)<>"AWL")) 
