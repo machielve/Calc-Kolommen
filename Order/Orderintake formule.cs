@@ -2,6 +2,7 @@
             (INDIRECT(RidderOrderData!$L$5));"="&MAAND($A5);
             (INDIRECT(RidderOrderData!$L$6));"="&JAAR($A5);
             (INDIRECT(RidderOrderData!$L$3));"="&D$2&"*")
+            
 
 =SOMMEN.ALS(RidderOrderData!$C$1:"C"&RidderOrderData!$K$2;
             RidderOrderData!$E$1:"E"&"250";"="&MAAND($A5);
