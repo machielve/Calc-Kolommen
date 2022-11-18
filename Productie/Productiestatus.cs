@@ -3,8 +3,6 @@ If([@Productieregels]==0, "Geen productie", "Lopende productie")
 
 
 
-
-
 // hieronder de visuele scripting regel
 using Ridder.Client.UIScript;
 using System.Drawing;
