@@ -3,6 +3,6 @@ COUNTCONDITION(
 
 [Detail_Materiaalstatus_Bon].[Voorraadtype]<>"1" AND 
 [Detail_Materiaalstatus_Bon].[Materiaaltype]=="1" AND 
-[Detail_Materiaalstatus_Bon].[Besteld]==[$MaterialState.Waar] AND
-[Detail_Materiaalstatus_Bon].[Artikelmagazijn].[Artikel].[Artikeleenheid].[Soort]<>"3"
+[Detail_Materiaalstatus_Bon].[Artikelmagazijn].[Artikel].[Artikeleenheid].[Soort]<>"3" AND
+[Detail_Materiaalstatus_Bon].[Besteld]==[$MaterialState.Waar]
 )
