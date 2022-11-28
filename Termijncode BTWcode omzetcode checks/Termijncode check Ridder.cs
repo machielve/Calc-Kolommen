@@ -1,9 +1,9 @@
-If(    [Termijncode].[Code]=="001"      
-    OR [Termijncode].[Code]=="002"
-    OR [Termijncode].[Code]=="003" 
-    OR [Termijncode].[Code]=="004"
+If(    ([Termijncode].[Code]=="001")     
+    OR ([Termijncode].[Code]=="002")
+    OR ([Termijncode].[Code]=="003") 
+    OR ([Termijncode].[Code]=="004")
     OR ([Termijncode].[Code]=="007" AND [Relatie].[code]<>"517")  
-    OR [Termijncode].[Code]=="008", 
+    OR ([Termijncode].[Code]=="008"), 
                                         "Termijncode fout", 
 
 If(    ([Termijncode].[Code]=="005" AND [@Total net amount]>=ConvertStringToInt("30000")    AND [Relatie].[code]=="150")
