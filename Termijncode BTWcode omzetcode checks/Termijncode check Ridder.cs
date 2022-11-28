@@ -41,8 +41,9 @@ If(    ([Termijncode].[Code]=="005" AND [@Total net amount]>=ConvertStringToInt(
                                                                                             AND [Relatie].[Code]<>"9057"
                                                                                             AND [Relatie].[Code]<>"3004"
                                                                                             AND [Relatie].[Code]<>"18003")
+
+    OR ([Termijncode].[Code]=="007" AND [Relatie].[Code]=="517" )                                                                                        
                                                                                             
-    
     OR ([Termijncode].[Code]=="009"                                                         AND [Relatie].[code]=="9043")
     OR ([Termijncode].[Code]=="009"                                                         AND [Relatie].[code]=="9042")
     OR ([Termijncode].[Code]=="009"                                                         AND [Relatie].[Code]=="483")
@@ -85,7 +86,7 @@ If(    ([Termijncode].[Code]=="005" AND [@Total net amount]>=ConvertStringToInt(
     OR ([Termijncode].[Code]=="BITO-DE_3"   AND [Relatie].[Code]=="26022"   AND [@Total net amount]>=ConvertStringToInt("30000"))
     OR ([Termijncode].[Code]=="STOW-DE"     AND [Relatie].[Code]=="1053"    AND [@Total net amount]>=ConvertStringToInt("10000"))
     OR ([Termijncode].[Code]=="STOW-DE"     AND [Relatie].[Code]=="1122"    AND [@Total net amount]>=ConvertStringToInt("10000"))
-    OR ([Termijncode].[Code]=="007"         AND [Relatie].[Code]=="517"                                                         )
+    
     OR ([Termijncode].[Code]=="STOW-INT"    AND [Relatie].[Code]=="1041"    AND [@Total net amount]<=ConvertStringToInt("10000"))
     OR ([Termijncode].[Code]=="STOW-INT"    AND [Relatie].[Code]=="9057"    AND [@Total net amount]<=ConvertStringToInt("10000"))
     OR ([Termijncode].[Code]=="STOW-INT"    AND [Relatie].[Code]=="1122"    AND [@Total net amount]<=ConvertStringToInt("10000"))
