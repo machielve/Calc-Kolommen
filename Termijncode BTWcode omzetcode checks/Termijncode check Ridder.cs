@@ -47,6 +47,7 @@ If(    ([Termijncode].[Code]=="005" AND [@Total net amount]>=ConvertStringToInt(
     OR ([Termijncode].[Code]=="009"                                                         AND [Relatie].[Code]=="483")
     OR ([Termijncode].[Code]=="009"                                                         AND [Relatie].[code]=="9042")
     OR ([Termijncode].[Code]=="009"                                                         AND [Relatie].[code]=="9043")
+
     OR ([Termijncode].[Code]=="009" AND [@Total net amount]<=ConvertStringToInt("30000")    AND [Relatie].[code]=="150")
     OR ([Termijncode].[Code]=="009" AND [@Total net amount]<=ConvertStringToInt("10000")    AND [Relatie].[code]=="495")
     OR ([Termijncode].[Code]=="009" AND [@Total net amount]<=ConvertStringToInt("10000")    AND [Relatie].[code]=="1025")
@@ -61,25 +62,25 @@ If(    ([Termijncode].[Code]=="005" AND [@Total net amount]>=ConvertStringToInt(
     OR ([Termijncode].[Code]=="009" AND [@Total net amount]<=ConvertStringToInt("50000")    AND [Relatie].[Code]=="18003"  AND (LEFT([Bestemmingsadres].[Naam],3)<>"AWL")) 
     OR ([Termijncode].[Code]=="009" AND [@Total net amount]<=ConvertStringToInt("50000")    AND [Relatie].[Code]=="18003"  AND (Right([Bestemmingsadres].[Naam],3)<>"AWL")) 
     
-    OR ([Termijncode].[Code]=="009" AND [@Total net amount]<=ConvertStringToInt("10000")    AND [Relatie].[code]<>"26022"
-                                                                                            AND [Relatie].[code]<>"9060"
-                                                                                            AND [Relatie].[code]<>"9091"
-                                                                                            AND [Relatie].[code]<>"1082" 
-                                                                                            AND [Relatie].[code]<>"1125"
-                                                                                            AND [Relatie].[code]<>"1025"
-                                                                                            AND [Relatie].[code]<>"1062"
+    OR ([Termijncode].[Code]=="009" AND [@Total net amount]<=ConvertStringToInt("10000")    AND [Relatie].[code]<>"483"
                                                                                             AND [Relatie].[code]<>"495"
-                                                                                            AND [Relatie].[code]<>"9050"
-                                                                                            AND [Relatie].[code]<>"9072"
-                                                                                            AND [Relatie].[code]<>"2004"
-                                                                                            AND [Relatie].[code]<>"483"
-                                                                                            AND [Relatie].[Code]<>"1053"
-                                                                                            AND [Relatie].[Code]<>"1122"
-                                                                                            AND [Relatie].[Code]<>"1041"
-                                                                                            AND [Relatie].[Code]<>"19017"
                                                                                             AND [Relatie].[Code]<>"517"
+                                                                                            AND [Relatie].[code]<>"1025"
+                                                                                            AND [Relatie].[Code]<>"1041"
+                                                                                            AND [Relatie].[Code]<>"1053" 
+                                                                                            AND [Relatie].[code]<>"1062"
+                                                                                            AND [Relatie].[code]<>"1082" 
+                                                                                            AND [Relatie].[Code]<>"1122"
+                                                                                            AND [Relatie].[code]<>"1125"
+                                                                                            AND [Relatie].[code]<>"2004"
+                                                                                            AND [Relatie].[code]<>"9050"
                                                                                             AND [Relatie].[Code]<>"9057"
-                                                                                            AND [Relatie].[Code]<>"18003")       
+                                                                                            AND [Relatie].[code]<>"9060"
+                                                                                            AND [Relatie].[code]<>"9072" 
+                                                                                            AND [Relatie].[code]<>"9091"
+                                                                                            AND [Relatie].[Code]<>"18003"
+                                                                                            AND [Relatie].[Code]<>"19017"
+                                                                                            AND [Relatie].[code]<>"26022")       
                                                                                                 
     OR ([Termijncode].[Code]=="BITO-DE_1"   AND [Relatie].[Code]=="26022"   AND [@Total net amount]<=ConvertStringToInt("10000"))
     OR ([Termijncode].[Code]=="BITO-DE_2"   AND [Relatie].[Code]=="26022"   AND [@Total net amount]>=ConvertStringToInt("10000") AND [@Total net amount]<=ConvertStringToInt("30000"))
