@@ -13,7 +13,7 @@ If(     ([Incoterm].[Code]=="DAP" AND [Bestemmingsadres].[Adres].[Land].[Code]==
                                   AND [Bestemmingsadres].[Adres].[Land].[Code]<>"UA"
                                   AND [Bestemmingsadres].[Adres].[Land].[Code]<>"TR"
                                   AND [Bestemmingsadres].[Adres].[Land].[Code]<>"US"    AND [BTW-bedrijfsgroep].[Code]<>"NL"
-                                                                                        AND [BTW-bedrijfsgroep].[Code]<>"EU")
+                                                                                        AND [BTW-bedrijfsgroep].[Code]<>"BEU")
                                   
     OR  ([Incoterm].[Code]=="DAP" AND [Bestemmingsadres].[Adres].[Land].[Code]<>"NL"    AND [Relatie].[Bezoekadres].[Land].[Code]=="NL" AND [BTW-bedrijfsgroep].[Code]=="NL")
     OR  ([Incoterm].[Code]=="DAP" AND Left([Bestemmingsadres].[Naam],9)=="Foldy Pac"    AND [BTW-bedrijfsgroep].[Code]=="BEU")
@@ -34,5 +34,5 @@ If(     ([Incoterm].[Code]=="DAP" AND [Bestemmingsadres].[Adres].[Land].[Code]==
                                   AND [Relatie].[Bezoekadres].[Land].[Code]<>"UA"
                                   AND [Relatie].[Bezoekadres].[Land].[Code]<>"TR"
                                   AND [Relatie].[Bezoekadres].[Land].[Code]<>"US"       AND [BTW-bedrijfsgroep].[Code]<>"NL"
-                                                                                        AND [BTW-bedrijfsgroep].[Code]<>"EU")
+                                                                                        AND [BTW-bedrijfsgroep].[Code]<>"BEU")
                                                                                                                         , "BTWcode correct", "BTWcode fout")
