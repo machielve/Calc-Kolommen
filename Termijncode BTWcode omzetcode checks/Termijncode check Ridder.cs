@@ -96,7 +96,7 @@ If(    ([Termijncode].[Code]=="005" AND [@Total net amount]>=ConvertStringToInt(
     OR ([Termijncode].[Code]=="STOW-INT"    AND [Relatie].[Code]=="19017"   AND [@Total net amount]<=ConvertStringToInt("10000"))
 
     OR ([Termijncode].[Code]=="STOW-INT_1"  AND [Relatie].[Code]=="1041"    AND [@Total net amount]>=ConvertStringToInt("10000"))
-    OR ([Termijncode].[Code]=="STOW-INT_1"  AND [Relatie].[Code]=="9091"    AND [@Total net amount]>=ConvertStringToInt("10000"))
     OR ([Termijncode].[Code]=="STOW-INT_1"  AND [Relatie].[Code]=="9057"    AND [@Total net amount]>=ConvertStringToInt("10000"))
+    OR ([Termijncode].[Code]=="STOW-INT_1"  AND [Relatie].[Code]=="9091"    AND [@Total net amount]>=ConvertStringToInt("10000"))
     OR ([Termijncode].[Code]=="STOW-INT_1"  AND [Relatie].[Code]=="19017"   AND [@Total net amount]>=ConvertStringToInt("10000"))
                                                                                                                                     ,"Termijncode correct","Termijncode fout"))
