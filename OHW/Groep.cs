@@ -1,5 +1,4 @@
-If(
-    
+If(    
     IsEmpty([Artikel OHW-regel].[OHW-regel artikel]) AND 
     IsEmpty([Uitbesteed werk OHW-regel].[OHW-regel uitbesteed werk ID]), [@D groep], "")+
     
