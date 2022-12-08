@@ -1,6 +1,6 @@
 If(COUNTCONDITION([Detail_Materiaalstatus_Bon].[Materiaal ID], 
 
-Left([Detail_Materiaalstatus_Bon].[Inkoopbestelling].[Leverancier].[Naam], 8)=="Berghoef")>0 
+Left([Detail_Materiaalstatus_Bon].[Inkoopbestelling].[Leverancier].[Code], 8)=="2002")>0 
 
 AND COUNTCONDITION([Detail_Materiaalstatus_Bon].[Materiaal ID], 
 
