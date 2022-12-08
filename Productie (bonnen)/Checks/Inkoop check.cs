@@ -1,0 +1,1 @@
+If([@Max leverdatum inkoop]-[Verzenddatum]>0, "Inkoop komt te laat", "")
