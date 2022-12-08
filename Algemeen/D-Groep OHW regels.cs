@@ -1,4 +1,6 @@
 If(Left([Code], 1) =="T"                                                            , "Transport", "")+
+if(Left([Code], 1) =="A"                                                            , "Administratief", "")+
+if(Left([Code], 1) =="B"                                                            , "Bewerkingen", "")+
 If(Left([Code], 3) =="D10" OR Left([Code], 4)=="K002" OR Left([Code], 4)=="K003"    , "Kolommen", "")+
 if(Left([Code], 3) =="D20"                                                          , "Koud gewalste liggers", "")+
 If(Left([Code], 3) =="D25" OR Left([Code], 4)=="K001"                               , "Warm gewalste liggers", "")+
