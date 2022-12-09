@@ -4,7 +4,7 @@ If(
     
 If(
     IsEmpty([Artikel OHW-regel].[OHW-regel artikel]) AND 
-    IsEmpty([OHW-regel divers].[OHW-regel divers ID]), "Uitbesteed werk", "")+
+    IsEmpty([OHW-regel divers].[OHW-regel divers ID]), [@U groep], "")+
     
 If(
     IsEmpty([OHW-regel divers].[OHW-regel divers ID]) AND 
