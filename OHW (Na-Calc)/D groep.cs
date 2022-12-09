@@ -1,6 +1,6 @@
 If(Left([Code], 1) =="T"            , "Transport", "")+
 If(Left([Code], 1) =="A"            , "Documentatie", "")+
-If(Left([Code], 1) =="B"            , "Constructie algemeen", "")+
+If(Left([Code], 1) =="B"            , "Bewerkingen", "")+
 
 If(Left([Code], 3) =="D10"          , "Kolommen", "")+
 If(Left([Code], 3) =="D15"          , "Schoring", "")+
@@ -15,7 +15,7 @@ If(Left([Code], 3) =="D60"          , "Accessoires constructie", "")+
 If(Left([Code], 3) =="D70"          , "Bevestigingsmaterialen", "")+
 If(Left([Code], 3) =="D75"          , "Accessoires", "")+
 If(Left([Code], 3) =="D80"          , "Montage", "")+
-If(Left([Code], 3) =="D85"          , "Constructie algemeen", "")+
+If(Left([Code], 3) =="D85"          , "Bewerkingen", "")+
 If(Left([Code], 2) =="D9"           , "Rest", "")+
 
 If(Left([Code], 4) =="K001"         , "Warm gewalste liggers", "")+
