@@ -23,4 +23,6 @@ If(Left([Code], 4) =="K002"   , "Kolommen", "")+
 If(Left([Code], 4) =="K003"   , "Kolommen", "")+
 
 If(Left([Code], 4) =="M001"   , "Koud gewalste liggers", "")+
-If(Left([Code], 4) =="M002"   , "Vloerdelen", "")
+If(Left([Code], 4) =="M002"   , "Vloerdelen", "")+
+
+If(Left([Code], 3) =="U10"    , "Coaten", "")
