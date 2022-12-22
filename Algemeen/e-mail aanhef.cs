@@ -13,11 +13,13 @@ If([Taal].[Code]=="DE",
     If([Contactpersoon].[Persoon].[Geslacht]==[$Gender.Man],            "Sehr geëhrter Herr", 
     If([Contactpersoon].[Persoon].[Geslacht]==[$Gender.Vrouw],          "Sehr geëhrter Frau", 
                                                                         "Sehr geëhrter Herr / Frau"))), 
-                                                                        "FOUT")))+
+                                                                        "FOUT")))
+                                                                        
+                                                                        +
 
 
 If(IsEmpty([Contactpersoon].[Persoon].[Tussenvoegsel]),                 " ", 
-                                                                        [Contactpersoon].[Persoon].[Tussenvoegsel]+
-                                                                        " ")+
-                                                                        [Contactpersoon].[Persoon].[Achternaam]+    
-                                                                        ","
+                                                                        " " + [Contactpersoon].[Persoon].[Tussenvoegsel]+ " ") 
+                                                                        
+                                                                        + [Contactpersoon].[Persoon].[Achternaam]
+                                                                        + ","
