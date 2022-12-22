@@ -17,7 +17,6 @@ If([Taal].[Code]=="DE",
                                                                         
                                                                         +
 
-
 If(IsEmpty([Contactpersoon].[Persoon].[Tussenvoegsel]),                 " ", 
                                                                         " " + [Contactpersoon].[Persoon].[Tussenvoegsel]+ " ") 
                                                                         
