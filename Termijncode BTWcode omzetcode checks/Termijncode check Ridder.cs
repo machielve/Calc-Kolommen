@@ -2,7 +2,7 @@ If(    ([Termijncode].[Code]=="001")
     OR ([Termijncode].[Code]=="002")
     OR ([Termijncode].[Code]=="003") 
     OR ([Termijncode].[Code]=="004")
-    OR ([Termijncode].[Code]=="007" AND [Relatie].[code]<>"517")  
+    OR ([Termijncode].[Code]=="007"                                                         AND [Relatie].[code]<>"517")  
     OR ([Termijncode].[Code]=="008"), 
                                         "Termijncode fout", 
 
@@ -43,7 +43,7 @@ If(    ([Termijncode].[Code]=="005" AND [@Total net amount]>=ConvertStringToInt(
                                                                                             AND [Relatie].[Code]<>"19017"
                                                                                             AND [Relatie].[code]<>"26022")
 
-    OR ([Termijncode].[Code]=="007" AND [Relatie].[Code]=="517" )                                                                                        
+    OR ([Termijncode].[Code]=="007"                                                         AND [Relatie].[Code]=="517" )                                                                                        
                                                                                             
     OR ([Termijncode].[Code]=="009"                                                         AND [Relatie].[Code]=="483")
     OR ([Termijncode].[Code]=="009"                                                         AND [Relatie].[code]=="9042")
