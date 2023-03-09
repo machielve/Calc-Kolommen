@@ -6,6 +6,7 @@ If(     ([Incoterm].[Code]=="DAP" AND [Bestemmingsadres].[Adres].[Land].[Code]==
     OR  ([Incoterm].[Code]=="DAP" AND [Bestemmingsadres].[Adres].[Land].[Code]=="UA"    AND [BTW-bedrijfsgroep].[Code]=="BEU")
     OR  ([Incoterm].[Code]=="DAP" AND [Bestemmingsadres].[Adres].[Land].[Code]=="US"    AND [BTW-bedrijfsgroep].[Code]=="BEU")
     OR  ([Incoterm].[Code]=="DAP" AND [Bestemmingsadres].[Adres].[Land].[Code]=="TR"    AND [BTW-bedrijfsgroep].[Code]=="BEU")
+    OR  ([Incoterm].[Code]=="DAP" AND [Bestemmingsadres].[Adres].[Land].[Code]=="IL"    AND [BTW-bedrijfsgroep].[Code]=="BEU")
     
     OR  ([Incoterm].[Code]=="DAP" AND [Bestemmingsadres].[Adres].[Land].[Code]<>"NL"
                                   AND [Bestemmingsadres].[Adres].[Land].[Code]<>"AE"
@@ -14,6 +15,7 @@ If(     ([Incoterm].[Code]=="DAP" AND [Bestemmingsadres].[Adres].[Land].[Code]==
                                   AND [Bestemmingsadres].[Adres].[Land].[Code]<>"NO"
                                   AND [Bestemmingsadres].[Adres].[Land].[Code]<>"UA"
                                   AND [Bestemmingsadres].[Adres].[Land].[Code]<>"TR"
+                                  AND [Bestemmingsadres].[Adres].[Land].[Code]<>"IL"
                                   AND [Bestemmingsadres].[Adres].[Land].[Code]<>"US"    AND [BTW-bedrijfsgroep].[Code]<>"NL"
                                                                                         AND [BTW-bedrijfsgroep].[Code]<>"BEU")
                                   
