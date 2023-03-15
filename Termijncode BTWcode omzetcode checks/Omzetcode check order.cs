@@ -21,6 +21,8 @@ If(     ([Incoterm].[Code]=="DAP" AND [Bestemmingsadres].[Adres].[Land].[Code]==
                                   
     OR  ([Incoterm].[Code]=="DAP" AND [Bestemmingsadres].[Adres].[Land].[Code]<>"NL"    AND [Relatie].[Bezoekadres].[Land].[Code]=="NL" AND [Omzetcode].[Code]=="NL")
     OR  ([Incoterm].[Code]=="DAP" AND Left([Bestemmingsadres].[Naam],9)=="Foldy Pac"    AND [Omzetcode].[Code]=="BEU")
+
+    
     
     OR  ([Incoterm].[Code]=="FCA" AND [Relatie].[Bezoekadres].[Land].[Code]=="UA"       AND [Omzetcode].[Code]=="BEU")
         

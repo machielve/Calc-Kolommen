@@ -22,7 +22,27 @@ If(     ([Incoterm].[Code]=="DAP" AND [Bestemmingsadres].[Adres].[Land].[Code]==
     OR  ([Incoterm].[Code]=="DAP" AND [Bestemmingsadres].[Adres].[Land].[Code]<>"NL"    AND [Relatie].[Bezoekadres].[Land].[Code]=="NL" AND [BTW-bedrijfsgroep].[Code]=="NL")
     OR  ([Incoterm].[Code]=="DAP" AND Left([Bestemmingsadres].[Naam],9)=="Foldy Pac"    AND [BTW-bedrijfsgroep].[Code]=="BEU")
 
+    
+
+    OR  ([Incoterm].[Code]=="FCA" AND [Relatie].[Bezoekadres].[Land].[Code]=="NL"       AND [BTW-bedrijfsgroep].[Code]=="NL")
     OR  ([Incoterm].[Code]=="FCA" AND [Relatie].[Bezoekadres].[Land].[Code]=="UA"       AND [BTW-bedrijfsgroep].[Code]=="BEU")
+    OR  ([Incoterm].[Code]=="FCA" AND [Relatie].[Bezoekadres].[Land].[Code]=="AE"       AND [BTW-bedrijfsgroep].[Code]=="BEU")
+    OR  ([Incoterm].[Code]=="FCA" AND [Relatie].[Bezoekadres].[Land].[Code]=="GB"       AND [BTW-bedrijfsgroep].[Code]=="BEU")
+    OR  ([Incoterm].[Code]=="FCA" AND [Relatie].[Bezoekadres].[Land].[Code]=="AW"       AND [BTW-bedrijfsgroep].[Code]=="BEU")
+    OR  ([Incoterm].[Code]=="FCA" AND [Relatie].[Bezoekadres].[Land].[Code]=="NO"       AND [BTW-bedrijfsgroep].[Code]=="BEU")
+    OR  ([Incoterm].[Code]=="FCA" AND [Relatie].[Bezoekadres].[Land].[Code]=="US"       AND [BTW-bedrijfsgroep].[Code]=="BEU")
+    OR  ([Incoterm].[Code]=="FCA" AND [Relatie].[Bezoekadres].[Land].[Code]=="TR"       AND [BTW-bedrijfsgroep].[Code]=="BEU")
+
+    OR  ([Incoterm].[Code]=="FCA" AND [Relatie].[Bezoekadres].[Land].[Code]<>"NL" 
+                                  AND [Relatie].[Bezoekadres].[Land].[Code]<>"AE"
+                                  AND [Relatie].[Bezoekadres].[Land].[Code]<>"UA"
+                                  AND [Relatie].[Bezoekadres].[Land].[Code]<>"GB"
+                                  AND [Relatie].[Bezoekadres].[Land].[Code]<>"AW"
+                                  AND [Relatie].[Bezoekadres].[Land].[Code]<>"NO"
+                                  AND [Relatie].[Bezoekadres].[Land].[Code]<>"UA"
+                                  AND [Relatie].[Bezoekadres].[Land].[Code]<>"TR"
+                                  AND [Relatie].[Bezoekadres].[Land].[Code]<>"US"       AND [BTW-bedrijfsgroep].[Code]<>"NL"
+                                                                                        AND [BTW-bedrijfsgroep].[Code]<>"BEU")
 
     OR  ([Incoterm].[Code]=="EXW" AND [Relatie].[Bezoekadres].[Land].[Code]=="NL"       AND [BTW-bedrijfsgroep].[Code]=="NL")
     OR  ([Incoterm].[Code]=="EXW" AND [Relatie].[Bezoekadres].[Land].[Code]=="AE"       AND [BTW-bedrijfsgroep].[Code]=="BEU")
