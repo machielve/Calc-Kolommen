@@ -1,0 +1,1 @@
+If([Verzenddatum]<>[@afhaal datum transport], "Verzenddatum niet gelijk aan afhaaldatum", "")
