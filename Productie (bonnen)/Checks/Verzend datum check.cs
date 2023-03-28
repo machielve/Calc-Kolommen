@@ -1,1 +1,1 @@
-If([Verzenddatum]<>[@afhaal datum transport], "Verzenddatum niet gelijk aan afhaaldatum", "")
+If([Verzenddatum]<>[@afhaal datum transport], "Verzenddatum is niet gelijk aan afhaaldatum", "")
