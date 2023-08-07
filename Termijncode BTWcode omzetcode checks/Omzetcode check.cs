@@ -50,6 +50,7 @@ If(     ([Incoterm].[Code]=="DAP" AND [Bestemmingsadres].[Adres].[Land].[Code]==
                                   AND [Relatie].[Bezoekadres].[Land].[Code]<>"US"       AND [Omzetcode].[Code]<>"NL"
                                                                                         AND [Omzetcode].[Code]<>"BEU"
                                                                                         AND [Relatie].[Bezoekadres].[Land].[Code]<>"NL")
+                                                                                        
         
     OR  ([Incoterm].[Code]=="EXW" AND [Relatie].[Bezoekadres].[Land].[Code]=="NL"       AND [Omzetcode].[Code]=="NL")
     OR  ([Incoterm].[Code]=="EXW" AND [Relatie].[Bezoekadres].[Land].[Code]=="AE"       AND [Omzetcode].[Code]=="BEU")
