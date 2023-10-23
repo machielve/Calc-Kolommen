@@ -6,7 +6,6 @@ If([Transport].[Laad relatie]==395,
     [Transport].[Detail_Inkooporderregel divers_Inkooporder].[Diversen].[Code]=="T0002"),0.0)+
 
 
-
 If([Transport].[Laad relatie]==7,
     
     SUMCONDITION(
@@ -21,6 +20,7 @@ If([Transport].[Laad relatie]==548,
     [Transport].[Detail_Inkooporderregel divers_Inkooporder].[Aantal], 
     [Transport].[Detail_Inkooporderregel divers_Inkooporder].[Detail_Alle reserveringen_Inkooporderregel divers].[Bonregel divers].[Bon]==[Bon] AND
     [Transport].[Detail_Inkooporderregel divers_Inkooporder].[Diversen].[Code]=="T0004"),0.0)+
+
 
 If([Transport].[Laad relatie]==421,
     
