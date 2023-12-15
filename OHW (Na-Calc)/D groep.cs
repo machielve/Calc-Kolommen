@@ -6,7 +6,8 @@ If(Left([Code], 3) =="D10"    , "Kolommen", "")+
 If(Left([Code], 3) =="D15"    , "Schoring", "")+
 If(Left([Code], 3) =="D20"    , "Koud gewalste liggers", "")+
 If(Left([Code], 3) =="D25"    , "Warm gewalste liggers", "")+
-If(Left([Code], 3) =="D30"    , "Vloerdelen", "")+
+If(Left([Code], 3) =="D30"    , "Vloerdelen hout", "")+
+If(Left([Code], 3) =="D35"    , "Vloerdelen staal", "")+
 If(Left([Code], 3) =="D40"    , "Trappen", "")+
 If(Left([Code], 3) =="D50"    , "Leuning", "")+
 If(Left([Code], 3) =="D51"    , "Hekwerk", "")+
