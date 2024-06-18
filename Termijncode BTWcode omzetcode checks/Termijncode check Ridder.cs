@@ -90,7 +90,7 @@ If(    ([Termijncode].[Code]=="005" AND [@Total net amount]>=ConvertStringToInt(
     OR ([Termijncode].[Code]=="CON_DEN_1"   AND [Relatie].[Code]=="1076"    )
 
     OR ([Termijncode].[Code]=="BRNZEEL_2"   AND [Relatie].[Code]=="150"     AND [@Total net amount]<=ConvertStringToInt("50000"))                                                                                            
-    OR ([Termijncode].[Code]=="BRNZEEL_3"   AND [Relatie].[Code]=="150"     AND [@Total net amount]>ConvertStringToInt("50000"))
+    OR ([Termijncode].[Code]=="BRNZEEL_3"   AND [Relatie].[Code]=="150"     AND [@Total net amount]> ConvertStringToInt("50000"))
 
     OR ([Termijncode].[Code]=="BITO-DE_1"   AND [Relatie].[Code]=="26022"   AND [@Total net amount]<=ConvertStringToInt("10000"))
     OR ([Termijncode].[Code]=="BITO-DE_2"   AND [Relatie].[Code]=="26022"   AND [@Total net amount]>=ConvertStringToInt("10000")    AND [@Total net amount]<=ConvertStringToInt("30000"))
@@ -112,4 +112,7 @@ If(    ([Termijncode].[Code]=="005" AND [@Total net amount]>=ConvertStringToInt(
     OR ([Termijncode].[Code]=="STOW-INT_1"  AND [Relatie].[Code]=="9091"    AND [@Total net amount]>=ConvertStringToInt("10000"))
     OR ([Termijncode].[Code]=="STOW-INT_1"  AND [Relatie].[Code]=="9196"    AND [@Total net amount]>=ConvertStringToInt("10000"))
     OR ([Termijncode].[Code]=="STOW-INT_1"  AND [Relatie].[Code]=="19017"   AND [@Total net amount]>=ConvertStringToInt("10000"))
+                                                                                                                                    
+                                                                                                                                    
+                                                                                                                                    
                                                                                                                                     ,"Termijncode correct","Termijncode fout"))
