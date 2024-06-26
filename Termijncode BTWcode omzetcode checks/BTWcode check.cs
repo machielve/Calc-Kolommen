@@ -27,6 +27,12 @@ If(     ([Incoterm].[Code]=="DAP" AND [Bestemmingsadres].[Adres].[Land].[Code]==
 
 
 
+
+
+    
+
+
+
     OR  ([Incoterm].[Code]=="FCA" AND [Relatie].[Bezoekadres].[Land].[Code]=="NL"       AND [BTW-bedrijfsgroep].[Code]=="NL")
     OR  ([Incoterm].[Code]=="FCA" AND [Relatie].[Bezoekadres].[Land].[Code]=="AE"       AND [BTW-bedrijfsgroep].[Code]=="BEU")
     OR  ([Incoterm].[Code]=="FCA" AND [Relatie].[Bezoekadres].[Land].[Code]=="AW"       AND [BTW-bedrijfsgroep].[Code]=="BEU")
