@@ -116,6 +116,7 @@ If(    ([Termijncode].[Code]=="005" AND [@Total net amount]>=ConvertStringToInt(
     
 
     OR ([Termijncode].[Code]=="STOW-INT_2"  AND [Relatie].[Code]=="1041"    AND [@Total net amount]< ConvertStringToInt("100000"))
+    
 
     OR ([Termijncode].[Code]=="STOW-INT_3"  AND [Relatie].[Code]=="1041"    AND [@Total net amount]>=ConvertStringToInt("100000"))
 
