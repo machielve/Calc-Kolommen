@@ -99,28 +99,27 @@ If(    ([Termijncode].[Code]=="005" AND [@Total net amount]>=ConvertStringToInt(
     OR ([Termijncode].[Code]=="STOW-DE"     AND [Relatie].[Code]=="1053"    AND [@Total net amount]>=ConvertStringToInt("10000"))
     OR ([Termijncode].[Code]=="STOW-DE"     AND [Relatie].[Code]=="1122"    AND [@Total net amount]>=ConvertStringToInt("10000"))
     
-    OR ([Termijncode].[Code]=="STOW-INT"    AND [Relatie].[Code]=="1041"    AND [@Total net amount]< ConvertStringToInt("10000"))
+    
     OR ([Termijncode].[Code]=="STOW-INT"    AND [Relatie].[Code]=="1053"    AND [@Total net amount]< ConvertStringToInt("10000"))
     OR ([Termijncode].[Code]=="STOW-INT"    AND [Relatie].[Code]=="1122"    AND [@Total net amount]< ConvertStringToInt("10000"))
     OR ([Termijncode].[Code]=="STOW-INT"    AND [Relatie].[Code]=="9057"    AND [@Total net amount]< ConvertStringToInt("10000"))
-    OR ([Termijncode].[Code]=="STOW-INT"    AND [Relatie].[Code]=="9091"    AND [@Total net amount]< ConvertStringToInt("10000"))
-    OR ([Termijncode].[Code]=="STOW-INT"    AND [Relatie].[Code]=="9196"    AND [@Total net amount]< ConvertStringToInt("10000"))
     OR ([Termijncode].[Code]=="STOW-INT"    AND [Relatie].[Code]=="19017"   AND [@Total net amount]< ConvertStringToInt("10000"))
 
-    OR ([Termijncode].[Code]=="STOW-INT_1"  AND [Relatie].[Code]=="1041"    AND [@Total net amount]>=ConvertStringToInt("10000"))
+
     OR ([Termijncode].[Code]=="STOW-INT_1"  AND [Relatie].[Code]=="9057"    AND [@Total net amount]>=ConvertStringToInt("10000"))
-    OR ([Termijncode].[Code]=="STOW-INT_1"  AND [Relatie].[Code]=="9091"    AND [@Total net amount]>=ConvertStringToInt("10000"))
-    OR ([Termijncode].[Code]=="STOW-INT_1"  AND [Relatie].[Code]=="9196"    AND [@Total net amount]>=ConvertStringToInt("10000"))
     OR ([Termijncode].[Code]=="STOW-INT_1"  AND [Relatie].[Code]=="19017"   AND [@Total net amount]>=ConvertStringToInt("10000"))
 
     
 
     OR ([Termijncode].[Code]=="STOW-INT_2"  AND [Relatie].[Code]=="1041"    AND [@Total net amount]< ConvertStringToInt("100000"))
-    OR ([Termijncode].[Code]=="STOW-INT_2"  AND [Relatie].[Code]=="1041"    AND [@Total net amount]< ConvertStringToInt("100000"))
-
+    OR ([Termijncode].[Code]=="STOW-INT_2"  AND [Relatie].[Code]=="9091"    AND [@Total net amount]< ConvertStringToInt("100000"))
+    OR ([Termijncode].[Code]=="STOW-INT_2"  AND [Relatie].[Code]=="9196"    AND [@Total net amount]< ConvertStringToInt("100000"))
+    OR ([Termijncode].[Code]=="STOW-INT_2"  AND [Relatie].[Code]=="9259"    AND [@Total net amount]< ConvertStringToInt("100000"))
 
     OR ([Termijncode].[Code]=="STOW-INT_3"  AND [Relatie].[Code]=="1041"    AND [@Total net amount]>=ConvertStringToInt("100000"))
-    OR ([Termijncode].[Code]=="STOW-INT_3"  AND [Relatie].[Code]=="1041"    AND [@Total net amount]>=ConvertStringToInt("100000"))
+    OR ([Termijncode].[Code]=="STOW-INT_3"  AND [Relatie].[Code]=="9091"    AND [@Total net amount]>=ConvertStringToInt("100000"))
+    OR ([Termijncode].[Code]=="STOW-INT_3"  AND [Relatie].[Code]=="9196"    AND [@Total net amount]>=ConvertStringToInt("100000"))
+    OR ([Termijncode].[Code]=="STOW-INT_3"  AND [Relatie].[Code]=="9259"    AND [@Total net amount]>=ConvertStringToInt("100000"))
 
 
 
