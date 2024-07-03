@@ -40,6 +40,7 @@ If(    ([Termijncode].[Code]=="005" AND [@Total net amount]>=ConvertStringToInt(
                                                                                             AND [Relatie].[Code]<>"9072"
                                                                                             AND [Relatie].[Code]<>"9091"
                                                                                             AND [Relatie].[Code]<>"9196"
+                                                                                            AND [Relatie].[Code]<>"9259"
                                                                                             AND [Relatie].[Code]<>"18003"
                                                                                             AND [Relatie].[Code]<>"19017"
                                                                                             AND [Relatie].[Code]<>"26022")
@@ -82,6 +83,7 @@ If(    ([Termijncode].[Code]=="005" AND [@Total net amount]>=ConvertStringToInt(
                                                                                             AND [Relatie].[Code]<>"9072" 
                                                                                             AND [Relatie].[Code]<>"9091"
                                                                                             AND [Relatie].[Code]<>"9196"
+                                                                                            AND [Relatie].[Code]<>"9259"
                                                                                             AND [Relatie].[Code]<>"18003"
                                                                                             AND [Relatie].[Code]<>"19017"
                                                                                             AND [Relatie].[Code]<>"26022")  
