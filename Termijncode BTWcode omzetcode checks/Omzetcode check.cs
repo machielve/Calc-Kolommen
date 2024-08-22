@@ -1,5 +1,6 @@
 If(     ([Incoterm].[Code]=="DAP" AND [Bestemmingsadres].[Adres].[Land].[Code]=="NL"    AND [Omzetcode].[Code]=="NL")
     OR  ([Incoterm].[Code]=="DAP" AND [Bestemmingsadres].[Adres].[Land].[Code]=="AE"    AND [Omzetcode].[Code]=="BEU")
+    OR  ([Incoterm].[Code]=="DAP" AND [Bestemmingsadres].[Adres].[Land].[Code]=="AU"    AND [Omzetcode].[Code]=="BEU")
     OR  ([Incoterm].[Code]=="DAP" AND [Bestemmingsadres].[Adres].[Land].[Code]=="AW"    AND [Omzetcode].[Code]=="BEU")
     OR  ([Incoterm].[Code]=="DAP" AND [Bestemmingsadres].[Adres].[Land].[Code]=="CH"    AND [Omzetcode].[Code]=="BEU")
     OR  ([Incoterm].[Code]=="DAP" AND [Bestemmingsadres].[Adres].[Land].[Code]=="GB"    AND [Omzetcode].[Code]=="BEU")
@@ -11,6 +12,7 @@ If(     ([Incoterm].[Code]=="DAP" AND [Bestemmingsadres].[Adres].[Land].[Code]==
     
     OR  ([Incoterm].[Code]=="DAP" AND [Bestemmingsadres].[Adres].[Land].[Code]<>"NL" 
                                   AND [Bestemmingsadres].[Adres].[Land].[Code]<>"AE"
+                                  AND [Bestemmingsadres].[Adres].[Land].[Code]<>"AU"
                                   AND [Bestemmingsadres].[Adres].[Land].[Code]<>"AW"
                                   AND [Bestemmingsadres].[Adres].[Land].[Code]<>"CH"
                                   AND [Bestemmingsadres].[Adres].[Land].[Code]<>"GB"
