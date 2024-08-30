@@ -26,6 +26,7 @@ If(    ([Termijncode].[Code]=="005" AND [@Total net amount]>=ConvertStringToInt(
                                                                                             AND [Relatie].[Code]<>"517"
                                                                                             AND [Relatie].[Code]<>"1025" 
                                                                                             AND [Relatie].[Code]<>"1041"
+                                                                                            AND [Relatie].[Code]<>"1042"
                                                                                             AND [Relatie].[Code]<>"1053"  
                                                                                             AND [Relatie].[Code]<>"1062"
                                                                                             AND [Relatie].[Code]<>"1076"
@@ -70,6 +71,7 @@ If(    ([Termijncode].[Code]=="005" AND [@Total net amount]>=ConvertStringToInt(
                                                                                             AND [Relatie].[Code]<>"517"
                                                                                             AND [Relatie].[Code]<>"1025"
                                                                                             AND [Relatie].[Code]<>"1041"
+                                                                                            AND [Relatie].[Code]<>"1042"
                                                                                             AND [Relatie].[Code]<>"1053" 
                                                                                             AND [Relatie].[Code]<>"1062"
                                                                                             AND [Relatie].[Code]<>"1076"
@@ -120,6 +122,8 @@ If(    ([Termijncode].[Code]=="005" AND [@Total net amount]>=ConvertStringToInt(
     OR ([Termijncode].[Code]=="STOW-INT_3"  AND [Relatie].[Code]=="9091"    AND [@Total net amount]>=ConvertStringToInt("100000"))
     OR ([Termijncode].[Code]=="STOW-INT_3"  AND [Relatie].[Code]=="9196"    AND [@Total net amount]>=ConvertStringToInt("100000"))
     OR ([Termijncode].[Code]=="STOW-INT_3"  AND [Relatie].[Code]=="9259"    AND [@Total net amount]>=ConvertStringToInt("100000"))
+
+    OR ([Termijncode].[Code]=="EUROS_1"     AND [Relatie].[Code]=="1042"    AND [@Total net amount]< ConvertStringToInt("100000"))
                                                                                                                                     
                                                                                                                                     
                                                                                                                                     ,"Termijncode correct","Termijncode fout"))
