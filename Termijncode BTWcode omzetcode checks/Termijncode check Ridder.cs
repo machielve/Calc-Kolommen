@@ -6,6 +6,8 @@ If(    ([Termijncode].[Code]=="001")
     OR ([Termijncode].[Code]=="008"), 
                                         "Termijncode fout", 
 
+If(    (SubString( [Termijncode].[Code],1,2)=="P_"),"Project termijncode",                                        
+
 If(    ([Termijncode].[Code]=="005" AND [@Total net amount]>=ConvertStringToInt("10000")    AND [Relatie].[Code]=="495")
     OR ([Termijncode].[Code]=="005" AND [@Total net amount]>=ConvertStringToInt("10000")    AND [Relatie].[Code]=="1025")
     OR ([Termijncode].[Code]=="005" AND [@Total net amount]>=ConvertStringToInt("10000")    AND [Relatie].[Code]=="1062")
@@ -126,4 +128,4 @@ If(    ([Termijncode].[Code]=="005" AND [@Total net amount]>=ConvertStringToInt(
     OR ([Termijncode].[Code]=="EUROS_1"     AND [Relatie].[Code]=="1042"    AND [@Total net amount]< ConvertStringToInt("100000"))
                                                                                                                                     
                                                                                                                                     
-                                                                                                                                    ,"Termijncode correct","Termijncode fout"))
+                                                                                                                                    ,"Termijncode correct","Termijncode fout")))
