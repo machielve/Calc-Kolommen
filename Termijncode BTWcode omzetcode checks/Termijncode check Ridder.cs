@@ -22,6 +22,7 @@ If(    ([Termijncode].[Code]=="005" AND [@Total net amount]>=ConvertStringToInt(
     OR ([Termijncode].[Code]=="005" AND [@Total net amount]>=ConvertStringToInt("50000")    AND [Relatie].[Code]=="18003")
     OR ([Termijncode].[Code]=="005" AND [@Total net amount]>=ConvertStringToInt("10000")    AND [Relatie].[Code]=="18003"  AND (LEFT([Bestemmingsadres].[Naam],3)=="AWL"))
     OR ([Termijncode].[Code]=="005" AND [@Total net amount]>=ConvertStringToInt("10000")    AND [Relatie].[Code]=="18003"  AND (RIGHT([Bestemmingsadres].[Naam],3)=="AWL"))
+    OR ([Termijncode].[Code]=="005" AND [@Total net amount]>=ConvertStringToInt("10000")    AND [Relatie].[Code]=="26009")
 
     OR ([Termijncode].[Code]=="006" AND [@Total net amount]>=ConvertStringToInt("10000")    AND [Relatie].[Code]=="9053")
     OR ([Termijncode].[Code]=="006" AND [@Total net amount]>=ConvertStringToInt("10000")    AND [Relatie].[Code]<>"150"
@@ -48,6 +49,7 @@ If(    ([Termijncode].[Code]=="005" AND [@Total net amount]>=ConvertStringToInt(
                                                                                             AND [Relatie].[Code]<>"9328"
                                                                                             AND [Relatie].[Code]<>"18003"
                                                                                             AND [Relatie].[Code]<>"19017"
+                                                                                            AND [Relatie].[Code]<>"26009"
                                                                                             AND [Relatie].[Code]<>"26022")
 
     OR ([Termijncode].[Code]=="007"                                                         AND [Relatie].[Code]=="517" )                                                                                        
