@@ -51,6 +51,7 @@ If(     ([Incoterm].[Code]=="DAP" AND [Bestemmingsadres].[Adres].[Land].[Code]==
     OR  ([Incoterm].[Code]=="FCA" AND [Relatie].[Bezoekadres].[Land].[Code]<>"NL" 
                                   AND [Relatie].[Bezoekadres].[Land].[Code]<>"AE"
                                   AND [Relatie].[Bezoekadres].[Land].[Code]<>"AW"
+                                  AND [Relatie].[Bezoekadres].[Land].[Code]<>"CA"
                                   AND [Relatie].[Bezoekadres].[Land].[Code]<>"CH"
                                   AND [Relatie].[Bezoekadres].[Land].[Code]<>"GB"
                                   AND [Relatie].[Bezoekadres].[Land].[Code]<>"IL"
