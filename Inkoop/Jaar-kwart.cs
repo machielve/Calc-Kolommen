@@ -1,0 +1,1 @@
+ConvertIntToString(Year([@Ontvangst datum]))+"-"+ConvertFloatToString(CEILING(Month([@Ontvangst datum])/3))
